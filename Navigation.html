@@ -40,7 +40,7 @@
 		}
 
 		.navMenu a {
-			color: #272727;
+			color: #0019ff;
 			text-decoration: none;
 			text-transform: uppercase;
 			display: inline-block;
@@ -52,20 +52,20 @@
 		}
 
 		.border {
-			border: 0px solid #00d2a0;
+			border: 1px solid #0019ff;
 
 		}
 
 		.navMenu a:hover {
 
-			color: #0019ff;
+			color: #00d2a0;
 		}
 	</style>
 </head>
 
 <body>
 
-	<nav class="navMenu  border background">
+	<nav class="navMenu  border ">
 		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i></a>
 		<a id="voorbereiding" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-desktop"></i> Voorbereiding</a>
 		<a id="uitvoering" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-tablet-screen-button"></i> Uitvoering</a>
@@ -79,7 +79,7 @@
 
 	<script>
 
-		let direction = "vertical";
+		let direction = "horizontal";
 		if (direction === "vertical") {
 			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
 		}
